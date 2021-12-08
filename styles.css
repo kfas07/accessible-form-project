@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+.header {
+    text-align: center;
+    color: #2f3944;
+    border-bottom: double 10px #2f3944;
+}
+.code-review {
+    margin-top: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #2f3944;
+}
