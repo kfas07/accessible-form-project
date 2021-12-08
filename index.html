@@ -17,8 +17,8 @@
     <form>
         <fieldset>
             <legend>Contact Information</legend>
-            <div class="contact-infor">
-                <label for="name">name</label>
+            <div class="contact-info-container">
+                <label for="name">Name</label>
                 <br>
                 <input type="text" id="name" name ="user_name" placeholder="Required">
                 <br>
@@ -40,7 +40,7 @@
                 <br>
                 <label for="state">State</label>
                 <br>
-                <select id="state" name="user_state">
+                <select id="states" name="user_state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -94,30 +94,35 @@
                     <option value="WY">Wyoming</option>
                 </select>
                 <br>
+                <div class="zip-code">
                 <label for="zip">Zip Code</label>
                 <br>
                 <input type="text" id="zip" name="user_zip">
+                </div>
             </div>
         </fieldset>
         <fieldset>
             <div class="newsletter"></div>
             <legend>Newsletter</legend>
             <p>Select the newsletters you would like to recieve</p>
-            <input type="checkbox" id="html" name="html_check"> 
-            <label for="html">HTML News</label>
-            <br>
-            <input type="checkbox" id="css" name="css_check">
-            <label for="css">CSS News</label>
-            <br>
-            <input type="checkbox" id="javascript" name="javascript_check">
-            <label for="javascript">Javascript News</label>
-
+            <div class="newsletter-checks">
+                <input type="checkbox" id="html" name="check" value="html_check"> 
+                <label for="html">HTML News</label>
+                <br>
+                <input type="checkbox" id="css" name="check" value="css_check">
+                <label for="css">CSS News</label>
+                <br>
+                <input type="checkbox" id="javascript" name="check" value="javascript_check">
+                <label for="javascript">Javascript News</label>
+            </div>
             <p>Newsletter format</p>
-            <input type="radio" id="html_format" name="html_radio">
-            <label fpr="html_format">HTML</label>
-            <br>
-            <input type="radio" id="plain_text" name="plain_radio">
-            <label for="plain_text">Plain text</label>
+            <div class="newsletter-radio">
+                <input type="radio" id="html_format" name="radio" value="html_radio">
+                <label fpr="html_format">HTML</label>
+                <br>
+                <input type="radio" id="plain_text" name="radio" value="plain_radio">
+                <label for="plain_text">Plain text</label>
+            </div>
             <br>
             <label for="other">Other topics you'd like to hear about</label>
             <br>
